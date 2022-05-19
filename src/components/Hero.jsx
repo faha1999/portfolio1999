@@ -1,4 +1,7 @@
 import React from 'react';
+import gitHub from '../images/github.png';
+import instagram from '../images/instagram.png';
+import linkedin from '../images/linkedin.png';
 
 export const Hero = () => {
   return (
@@ -14,6 +17,12 @@ export const Hero = () => {
         </div>
 
         <button className="button">Hire me</button>
+
+        <div className="icon">
+          <img src={gitHub} alt="gitHub" />
+          <img src={instagram} alt="instagram" />
+          <img src={linkedin} alt="linkedin" />
+        </div>
       </div>
 
       <div className="right">hi</div>
