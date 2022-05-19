@@ -1,0 +1,54 @@
+.navbar {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+
+    .name {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+  }
+
+  .right {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+
+    .list {
+      flex: 10;
+
+      ul {
+        display: flex;
+        gap: 2rem;
+        margin-right: 4rem;
+
+        li {
+          list-style: none;
+
+          &:hover {
+            color: var(--orange);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .button {
+      flex: 2;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .n-list {
+    display: none;
+  }
+}

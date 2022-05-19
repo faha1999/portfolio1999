@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   font-family: 'Itim', cursive;
+  transition: 0.4s ease-in;
+  outline: none;
 }
 
 .App {
@@ -12,7 +14,7 @@
   color: var(--black);
 }
 
-.button {
+button {
   background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
   box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
   border-radius: 34px;
@@ -20,14 +22,18 @@
   color: white;
   font-size: 16px;
   padding: 11px 26px 11px 26px;
+  transition: 0.4s ease-out;
+  border: 1px solid transparent;
+
+  &:hover {
+    background: white;
+    cursor: pointer;
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    transition: 0.4s ease-out;
+  }
 }
 
-.button:hover {
-  background: white;
-  cursor: pointer;
-  border: 1px solid var(--orange);
-  color: var(--orange);
-}
 @media screen and (max-width: 480px) {
   .App {
     padding: 0.5rem 1rem;
