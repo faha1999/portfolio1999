@@ -56,7 +56,7 @@
 
   .right {
     position: relative;
-    left: 5rem;
+    left: 8rem;
 
     .mainCircle {
       left: 9rem;
@@ -137,6 +137,28 @@
       background: #f5c32c;
       left: 18rem;
       top: 8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .works {
+    flex-direction: column;
+    height: 55rem;
+    padding: 0;
+    gap: 5rem;
+
+    .right {
+      display: flex;
+      align-items: flex-start;
+      justify-content: start;
+      transform: scale(0.7);
+    }
+    .w-mainCircle {
+      position: static;
+    }
+    .w-backCircle {
+      left: 8rem !important;
     }
   }
 }
