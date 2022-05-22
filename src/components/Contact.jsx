@@ -5,10 +5,8 @@ export const Contact = () => {
   return (
     <div className="contact">
       <div className="left">
-        <div>
-          <span>Get in touch</span>
-          <span>Contact me</span>
-        </div>
+        <span>Get in touch</span>
+        <span>Contact me</span>
 
         <a href={Resume} download>
           <button className="button">Download CV</button>
@@ -23,14 +21,16 @@ export const Contact = () => {
             type="email"
             name="email"
             placeholder="Email"
-            className="email"
+            className="user"
           />
           <textarea
             name="message"
-            className="textarea"
+            className="user"
             placeholder="Message"
           ></textarea>
-          <input type="submit" value="send" className="button" />
+          <button type="submit" value="send" className="button">
+            Send
+          </button>
 
           <div
             className="blur c-blur1"
