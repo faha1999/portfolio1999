@@ -8,9 +8,9 @@ export const Footer = () => {
   return (
     <footer>
       <img src={Wave} alt="" style={{ width: '100%' }} />
-      <div className="f-content">
+      <div className="content">
         <span>faha199@gmail.com</span>
-        <div className="f-icons">
+        <div className="icons">
           <Insta color="white" size={'3rem'} />
           <Facebook color="white" size={'3rem'} />
           <Gitub color="white" size={'3rem'} />
