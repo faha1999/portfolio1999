@@ -43,7 +43,7 @@ export const Services = () => {
           <ServicesCard
             emoji={HeartEmoji}
             heading={'Design'}
-            detail={'Figma, Adobe xd, Photoshop, Illustrator'}
+            detail={'Figma, Adobe xd, Adobe Photoshop, Illustrator'}
           />
         </motion.div>
 
@@ -51,6 +51,7 @@ export const Services = () => {
           initial={{ left: '-11rem', top: '12rem' }}
           whileInView={{ left: '-4rem' }}
           transition={transition}
+          className="middle"
         >
           <ServicesCard
             emoji={Glasses}

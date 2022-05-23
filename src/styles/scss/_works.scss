@@ -63,7 +63,7 @@
       width: 18rem;
       height: 18rem;
       border-radius: 100%;
-      box-shadow: var(--smboxShadow);
+      box-shadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
       top: 2rem;
       background: white;
       /* darkMode */
@@ -99,7 +99,7 @@
       }
     }
 
-    .w-secCircle {
+    .circle {
       width: 6rem;
       height: 6rem;
       position: absolute;
@@ -109,7 +109,7 @@
       align-items: center;
       justify-content: center;
       background: 'none';
-      box-shadow: var(--smboxShadow);
+      box-shadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
       background: white;
 
       & > img {
@@ -143,7 +143,7 @@
 @media screen and (max-width: 480px) {
   .works {
     flex-direction: column;
-    height: 55rem;
+    height: 35rem;
     padding: 0;
     gap: 5rem;
 
@@ -151,13 +151,16 @@
       display: flex;
       align-items: flex-start;
       justify-content: start;
-      transform: scale(0.7);
-    }
-    .w-mainCircle {
-      position: static;
-    }
-    .w-backCircle {
-      left: 8rem !important;
+      transform: scale(0.8);
+      margin-left: 25%;
+      margin-right: 100%;
+
+      .mainCircle {
+        position: static;
+      }
+      .w-backCircle {
+        left: 8rem !important;
+      }
     }
   }
 }

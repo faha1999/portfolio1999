@@ -55,6 +55,7 @@ export const Hero = () => {
           initial={{ top: '-4%', left: '74%' }}
           whileInView={{ left: '68%' }}
           transition={transition}
+          className="floating-div"
         >
           <FloatingDiv image={crown} text1="Web" text2="developer" />
         </motion.div>
@@ -63,6 +64,7 @@ export const Hero = () => {
           initial={{ left: '9rem', top: '18rem' }}
           whileInView={{ left: '0rem' }}
           transition={transition}
+          className="floating-div"
         >
           <FloatingDiv image={thumbup} text1="Best Design" text2="Award" />
         </motion.div>
