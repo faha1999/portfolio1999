@@ -36,7 +36,7 @@ export const Contact = () => {
   };
 
   return (
-    <div className="contact">
+    <div className="contact" id="Contact">
       <div className="left">
         <span style={{ color: darkMode ? 'white' : '' }}>Get in touch</span>
         <span>Contact me</span>

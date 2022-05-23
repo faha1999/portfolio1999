@@ -8,7 +8,7 @@ import TestimonialsData from './partials/TestimonialsData';
 
 export const Testimonials = () => {
   return (
-    <div className="testimonials">
+    <div className="testimonials" id="Testimonials">
       <div className="heading">
         <span>Clients always get </span>
         <span>Exceptional Work </span>
