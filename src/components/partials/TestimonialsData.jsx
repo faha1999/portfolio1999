@@ -25,7 +25,7 @@ const testimonialData = [
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.',
   },
   {
-    id: 3,
+    id: 4,
 
     img: profilePic4,
     review:
