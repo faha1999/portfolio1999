@@ -1,11 +1,12 @@
 import React from 'react';
+import { Toggle } from './partials/Toggle';
 
 export const Navbar = () => {
   return (
     <div className="navbar">
       <div className="left">
         <div className="name">Faha1999</div>
-        <span>toggle</span>
+        <Toggle />
       </div>
 
       <div className="right">
