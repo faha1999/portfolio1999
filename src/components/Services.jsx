@@ -5,10 +5,16 @@ import Glasses from '../images/glasses.png';
 import Humble from '../images/humble.png';
 import { ServicesCard } from './partials/ServicesCard';
 import { themeContext } from '../Context';
+import { motion } from 'framer-motion';
 
 export const Services = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+
+  const transition = {
+    duration: 1,
+    type: 'spring',
+  };
 
   return (
     <div className="services">
@@ -29,23 +35,35 @@ export const Services = () => {
 
       {/* Right */}
       <div className="right">
-        <div style={{ left: '19rem' }}>
+        <motion.div
+          initial={{ left: '25rem' }}
+          whileInView={{ left: '14rem' }}
+          transition={transition}
+        >
           <ServicesCard
             emoji={HeartEmoji}
             heading={'Design'}
             detail={'Figma, Adobe xd, Photoshop, Illustrator'}
           />
-        </div>
+        </motion.div>
 
-        <div style={{ top: '12rem', left: '-4rem' }}>
+        <motion.div
+          initial={{ left: '-11rem', top: '12rem' }}
+          whileInView={{ left: '-4rem' }}
+          transition={transition}
+        >
           <ServicesCard
             emoji={Glasses}
             heading={'Developer'}
             detail={'Html, Css, JavaScript, React, Nodejs, Express'}
           />
-        </div>
+        </motion.div>
 
-        <div style={{ top: '21.5rem', left: '12rem' }}>
+        <motion.div
+          initial={{ top: '21rem', left: '25rem' }}
+          whileInView={{ left: '12rem' }}
+          transition={transition}
+        >
           <ServicesCard
             emoji={Humble}
             heading={'UI/UX'}
@@ -54,7 +72,7 @@ export const Services = () => {
             }
             color="rgba(252, 166, 31, 0.45)"
           />
-        </div>
+        </motion.div>
 
         <div
           className="blur s-blur2"

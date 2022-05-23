@@ -10,8 +10,11 @@ import crown from '../images/crown.png';
 import glassesimoji from '../images/glassesimoji.png';
 import { FloatingDiv } from './partials/FloatingDiv';
 import { themeContext } from '../Context';
+import { motion } from 'framer-motion';
 
 export const Hero = () => {
+  const transition = { duration: 2, type: 'spring' };
+
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
@@ -40,15 +43,29 @@ export const Hero = () => {
         <img src={Vector1} alt="Vector1" />
         <img src={Vector2} alt="Vector1" />
         <img src={boy} alt="boy" />
-        <img src={glassesimoji} alt="glassesimoji" />
+        <motion.img
+          initial={{ left: '-36%' }}
+          whileInView={{ left: '-24%' }}
+          transition={transition}
+          src={glassesimoji}
+          alt="glassesimoji"
+        />
 
-        <div style={{ top: '-4%', left: '68%' }}>
+        <motion.div
+          initial={{ top: '-4%', left: '74%' }}
+          whileInView={{ left: '68%' }}
+          transition={transition}
+        >
           <FloatingDiv image={crown} text1="Web" text2="developer" />
-        </div>
+        </motion.div>
 
-        <div style={{ top: '18rem', left: '0rem' }}>
+        <motion.div
+          initial={{ left: '9rem', top: '18rem' }}
+          whileInView={{ left: '0rem' }}
+          transition={transition}
+        >
           <FloatingDiv image={thumbup} text1="Best Design" text2="Award" />
-        </div>
+        </motion.div>
 
         <div
           className="blur"
