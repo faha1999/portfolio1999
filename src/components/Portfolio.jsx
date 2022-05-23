@@ -1,19 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-
 import { Autoplay, Pagination } from 'swiper';
-
 import Sidebar from '../images/sidebar.png';
 import Ecommerce from '../images/ecommerce.png';
 import HOC from '../images/hoc.png';
 import MusicApp from '../images/musicapp.png';
+import { themeContext } from '../Context';
 
 export const Portfolio = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="portfolio">
-      <span>Recent projects</span>
+      <span style={{ color: darkMode ? 'white' : '' }}>Recent projects</span>
       <span>Portfolio</span>
 
       {/* Slider */}
