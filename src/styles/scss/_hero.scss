@@ -59,6 +59,11 @@
     flex: 1;
     position: relative;
 
+    .boy {
+      width: 285px;
+      height: 406px;
+    }
+
     & > * {
       position: absolute;
       z-index: 1;

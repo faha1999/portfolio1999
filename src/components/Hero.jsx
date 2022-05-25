@@ -42,7 +42,7 @@ export const Hero = () => {
       <div className="right">
         <img src={Vector1} alt="Vector1" />
         <img src={Vector2} alt="Vector1" />
-        <img src={boy} alt="boy" />
+        <img className="boy" src={boy} alt="boy" />
         <motion.img
           initial={{ left: '-36%' }}
           whileInView={{ left: '-24%' }}
@@ -61,7 +61,7 @@ export const Hero = () => {
         </motion.div>
 
         <motion.div
-          initial={{ left: '9rem', top: '18rem' }}
+          initial={{ left: '9rem', top: '22.8rem' }}
           whileInView={{ left: '0rem' }}
           transition={transition}
           className="floating-div"
